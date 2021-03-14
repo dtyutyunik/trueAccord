@@ -1,6 +1,6 @@
 // https://fundresearch.fidelity.com/mutual-funds/composition/316464106 information used for finanical derivatives 
 
-let investments=[{investment_name: 'Fidelity® Value Fund',
+let investments=[{investment_name: 'Fidelity Value Fund',
         asset_holdings: {
             Domestic_Equities: 92.60,
             International_Equities: 7.32,
@@ -12,7 +12,7 @@ let investments=[{investment_name: 'Fidelity® Value Fund',
     },
 
     {
-        investment_name: 'Fidelity® Select Biotechnology Portfolio',
+        investment_name: 'Fidelity Select Biotechnology Portfolio',
         asset_holdings: {
             Domestic_Equities: 92.86,
             International_Equities: 6.49,
@@ -23,7 +23,7 @@ let investments=[{investment_name: 'Fidelity® Value Fund',
         ticker: 'FBIOX'
     },
 
-    {investment_name: 'Fidelity® Growth Company Fund',
+    {investment_name: 'Fidelity Growth Company Fund',
         asset_holdings: {
             Domestic_Equities: 91.03,
             International_Equities: 8.75,
@@ -34,7 +34,7 @@ let investments=[{investment_name: 'Fidelity® Value Fund',
         ticker: 'FDGRX'
     },
 
-    {investment_name: 'Fidelity® Balanced Fund',
+    {investment_name: 'Fidelity Balanced Fund',
         asset_holdings: {
             Domestic_Equities: 66.89,
             International_Equities: 4.11,
@@ -45,7 +45,7 @@ let investments=[{investment_name: 'Fidelity® Value Fund',
         ticker: 'FBALX'
     },
 
-    {investment_name: 'Fidelity Freedom® Income Fund',
+    {investment_name: 'Fidelity Freedom Income Fund',
         asset_holdings: {
             Domestic_Equities: 9.01,
             International_Equities: 12.73,
@@ -55,7 +55,7 @@ let investments=[{investment_name: 'Fidelity® Value Fund',
         asset_class: 'Large Blend',
         ticker: 'FFFAX'
     },
-    {investment_name: 'Fidelity® U.S. Bond Index Fund',
+    {investment_name: 'Fidelity U.S. Bond Index Fund',
         asset_holdings: {
             Domestic_Equities: 0,
             International_Equities: 0,
