@@ -5,7 +5,7 @@ function PersonalInvestments({investmentTypes,removeInvesment}){
 
 
     const renderHeader = () => {
-        let headerElement = ['investment_name', 'asset_class', 'ticker','asset_holdings', 'operation']
+        let headerElement = ['investment_name', 'asset_class', 'ticker','asset_holdings','allocation' ,'operation']
 
         return headerElement.map((key, index) => {
             return <th key={index}>{key.toUpperCase()}</th>
@@ -20,7 +20,7 @@ function PersonalInvestments({investmentTypes,removeInvesment}){
                     <td>{asset_class}</td>
                     <td>{ticker}</td>
                     <td><BarChart totalInvestments={asset_holdings}/></td>
-
+                    <td>Placeholder</td>
                     <td className='delete'>
                         <button className='deleteButton' onClick={() => removeInvesment(investment_name)}>X</button>
                     </td>

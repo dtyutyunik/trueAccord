@@ -2,7 +2,7 @@ import react from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-function Total({totalInvestments}){
+function PieChart({totalInvestments}){
 
   const options = {
     title: {
@@ -44,9 +44,9 @@ function Total({totalInvestments}){
           {totalInvestments['Domestic_Equities']!==undefined?<HighchartsReact
           highcharts={Highcharts}
           options={options}
-        />:<h1>Select something</h1>}
+        />:<h2>Select an investment to see the pie chart Breakdown</h2>}
       </div>
     )
 }
 
-export default Total;
+export default PieChart;

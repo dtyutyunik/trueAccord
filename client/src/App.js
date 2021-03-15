@@ -3,7 +3,7 @@ import investments from './financials';
 import {useState,useEffect} from 'react';
 import InvestmentList from './investmentsList';
 import PersonalInvestments from './personalInvestments';
-import Total from './total';
+import PieChart from './pieChart';
 
 function App() {
   const [investmentTypes,setInvestmentTypes]=useState([])
@@ -22,8 +22,7 @@ function App() {
 
 
  const calculateTotal=()=>{
-   console.log('calc total called')
-
+   
     let totalItems=selectedInvestments.length;
     let totals={}
     for(let i=0;i<totalItems;i++){
@@ -67,7 +66,7 @@ function App() {
 
   return (
     <div className="App">
-      <Total totalInvestments={totalPortfolio}/>
+      <PieChart totalInvestments={totalPortfolio}/>
       <InvestmentList addInvestment={addInvestment} investmentTypes={investmentTypes} listOfInvestments={listOfInvestments}/>
       <PersonalInvestments removeInvesment={removeInvesment} investmentTypes={selectedInvestments}/>
     </div>
