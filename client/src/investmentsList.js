@@ -1,17 +1,21 @@
 import react from 'react';
 
-function InvestmentsList({investmentTypes,choosingInvestment}){
+function InvestmentsList({investmentTypes,addInvestment, listOfInvestments}){
     return(<div>
-        <h1>Avaialbe List of Investments</h1>
-        {investmentTypes?investmentTypes.map((i)=>{
-            return<div onClick={()=>choosingInvestment(i)} key={i.investment_name}>
-                
-                <p >
-                  {i.investment_name}
-                </p>
-              </div>
-          }):''}
+        <h1>Choose an investment</h1>
+     {investmentTypes?investmentTypes.map((i)=>{
+    return<div onClick={()=>addInvestment(i)}  key={i.investment_name}
+    className={listOfInvestments.find(elemnt=>elemnt===i.investment_name) ?'badInvestment':'investment'}
+    disabled={listOfInvestments.find(element=>element===i.investment_name) ?false:true}>
+            <div>{i.investment_name}</div>
+          
+      </div>
+  }):''}
+        
+
           </div>)
 }
 
 export default InvestmentsList;
+
+
